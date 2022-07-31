@@ -1,0 +1,4 @@
+
+"$NODE_EXE" "$NPM_CLI_JS" "$@"reyhgfgdjhdjhdjhj
+
+iiiki
