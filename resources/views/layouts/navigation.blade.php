@@ -34,9 +34,18 @@
                     </x-slot>
 
                     <x-slot name="content">
+                        <x-dropdown-link href="\users\list"
+                        onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                    {{ __('Użytkownicy') }}
+                </x-dropdown-link>
+                     
+
+                        {{-- <a  class="dropdown-item dropdown " href="\users\list">Użytkownicy</a> --}}
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
+                              
 
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
